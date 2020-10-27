@@ -4,14 +4,12 @@ public class Course {
     private String courseName;
     private int courseId;
     private Teacher teacher;
-    private Student student;
 
     public Course(int courseId,String courseName,Teacher teacher){
         super();
         this.courseId = courseId;
         this.courseName = courseName;
         this.setTeacher(teacher);
-        student = new Student();
     }
     public void setId(int Id){
         this.courseId = Id;
